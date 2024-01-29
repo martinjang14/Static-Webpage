@@ -1,0 +1,11 @@
+.navbar{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#onpage{
+    text-decoration: underline white;
+}
