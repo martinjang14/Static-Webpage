@@ -8,10 +8,61 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="homepage.html">Home</a>
-        <a href="statistics.html">Statistics</a>
-        <a href="photos.html">Photos</a>
-        <a href="survey.html" id="onpage">Survey</a>
+        <a href="homepage.html" class="nav">Home</a>
+        <a href="statistics.html" class="nav">Statistics</a>
+        <a href="photos.html" class="nav">Photos</a>
+        <a href="survey.html" id="onpage" class="nav">Survey</a>
     </div>
+
+    <form action="index.php", method="POST">
+        
+        <label for="collection">Do you have a rubber duck collection?</label>
+        <select id="collection">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <p></p>
+
+        <label for="bundle">How many rubber ducks to you own?</label>
+        <label for="0_5">0-5</label>
+        <input type="radio" id="0_5" value="0_5" name="bundle">
+        <label for="5_10">5-10</label>
+        <input type="radio" id="5_10" value="5_10" name="bundle">
+        <label for="10_20">10-20</label>
+        <input type="radio" id="10_20" value="10_20" name="bundle">
+        <label for="20+">20+</label>
+        <input type="radio" id="20+" value="20+" name="bundle">
+        <p></p>
+        
+        <label for="duck_in_room">What is your favorite rubber duck in the computer science room?</label>
+        <input type="text" id="duck_in_room" placeholder="The big duck" maxlength="90" required><br>
+        <p></p>
+
+        <label for="top_5">Out of the following bundles, which two bundles of rubber ducks is your favorite?</label><br>
+        <label for="circus">Circus</label>
+        <img src="duckPics/circus.jpg" alt="outer space pic" class="bundle_img">
+        <input type="checkbox" id="circus"><br>
+
+        <label for="beach">Beach</label>
+        <img src="duckPics/beach.jpg" alt="outer space pic" class="bundle_img">
+        <input type="checkbox" id="beach"><br>
+
+        <label for="ninja">Ninja</label>
+        <img src="duckPics/ninja.jpg" alt="outer space pic" class="bundle_img">
+        <input type="checkbox" id="ninja"><br>
+
+        <label for="outer_space">Outer Space</label>
+        <img src="duckPics/outer_space.png" alt="outer space pic" class="bundle_img">
+        <input type="checkbox" id="outer_space"><br>
+        <p></p>
+
+        <label for="picture">Send a picture of your favorite rubber duck:</label>
+        <input type="file" id="picture" accept="image/png"><br>
+        <p></p>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+
 </body>
 </html>
